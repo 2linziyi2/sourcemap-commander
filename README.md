@@ -2,6 +2,7 @@
 
     git clone https://github.com/2linziyi2/sourcemap-commander.git
     cd sourcemap-commander
+    npm install
     npm link
 
 ## 使用
