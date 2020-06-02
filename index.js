@@ -69,7 +69,8 @@ function getRealStackLine(sourceMapObj, stackLine) {
 }
 
 function getRealStack(sourceMapObj, stack) {
-  let stackArr = stack.split("\n");
+  // 这里因可能换行符不起作用
+  let stackArr = stack.split("\\n");
   return stackArr.map(stackLine => getRealStackLine(sourceMapObj, stackLine)).join("\n");
 }
 
@@ -121,3 +122,5 @@ Options:
   sourcemap -f ./ios.bundle.map -c 391 -l 96
   `)
 }
+
+
