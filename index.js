@@ -3,6 +3,7 @@ const program = require('commander');
 const sourceMap = require('source-map');
 const axios = require('axios');
 const fs = require('fs');
+const _ = require('lodash')
 const http = axios.create({
   withCredentials: false,
   timeout: 30000
